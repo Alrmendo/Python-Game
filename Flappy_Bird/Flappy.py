@@ -23,7 +23,7 @@ def draw_pipe(pipes):
 def check_collision(pipes):
     for pipe in pipes:
         if bird_rect.colliderect(pipe):
-            hit_sound.play()
+            #hit_sound.play()
             return False
     if bird_rect.top <= -75 or bird_rect.bottom >= 650:
             return False
@@ -120,7 +120,7 @@ while True:
             if event.key == pygame.K_SPACE and game_active:
                 bird_movement = 0
                 bird_movement =-11
-                flap_sound.play()
+                #flap_sound.play()
             if event.key == pygame.K_SPACE and game_active == False:
                 game_active = True 
                 pipe_list.clear()
